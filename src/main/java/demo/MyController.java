@@ -11,10 +11,6 @@ public class MyController {
         this.myService= myService;
     }
 
-    public String get(){
-        return myService.getName();
-    }
-
     @GetMapping(value = "/")
     public String getMyService(){
         System.out.println("has been called");
